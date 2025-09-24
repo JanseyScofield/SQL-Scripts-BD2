@@ -18,7 +18,7 @@ CREATE TABLE Municipio(
 	NomeMunicipio 	CHARACTER(50) NOT NULL,
 	CodEstado 	DECIMAL(6) NOT NULL,
 	CONSTRAINT pk_municipio PRIMARY KEY (CodMunicipio),
-	CONSTRAINT fk_municipio_pk_estado FOREIGN KEY (CodMunicipio) REFERENCES Municipio (CodMunicipio));
+	CONSTRAINT fk_municipio_pk_estado FOREIGN KEY (CodEstado) REFERENCES Estado (CodEstado));
 
 CREATE TABLE Indice(
 	CodMunicipio 	DECIMAL NOT NULL,
